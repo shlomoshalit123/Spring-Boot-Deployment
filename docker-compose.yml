@@ -34,4 +34,4 @@ services:
 
 secrets:
    db-password:
-     file: app/db/password.txt
+     file: ./app/db/password.txt
