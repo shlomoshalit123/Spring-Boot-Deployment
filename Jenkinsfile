@@ -19,7 +19,7 @@ pipeline {
             steps {
                 cleanWs()
                 checkout scmGit(branches: [[name: '*/dev']], extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'app']], userRemoteConfigs: [[url: 'https://github.com/shlomoshalit123/react-java0mysql.git']])
-                checkout scmGit(branches: [[name: '*/main']], extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'deploy']], userRemoteConfigs: [[url: 'https://github.com/shlomoshalit123/Sprint-Boot-Deployment.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'deploy']], userRemoteConfigs: [[url: 'https://github.com/shlomoshalit123/Spring-Boot-Deployment.git']])
             }
         }
         stage('build') {
